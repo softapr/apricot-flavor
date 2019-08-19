@@ -1,0 +1,81 @@
+
+// Paragraph
+// -------------------
+
+p {
+	@include p();
+	margin: 1em 0;
+}
+
+a {
+	color: $primaryColor;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+// Basic Elements
+// -------------------
+
+abbr,
+acronym {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+address {
+	font-size: 1rem;
+	font-style: italic;
+}
+
+blockquote {
+	margin: 1em 0;
+	padding: 0 0 0 2em;
+}
+
+cite {
+	font-style: italic;
+}
+
+code {
+	font-size: 0.96rem;
+	font-family: monospace;
+	background: $baseColor;
+	border: 1px solid darken($baseColor, 5%);
+	padding: 0.125em 0.25em;
+	line-height: 150%;
+}
+
+em,
+i {
+	font-style: italic;
+}
+
+strong,
+b {
+	font-weight: bold;
+}
+
+hr {
+	outline: none;
+	border: none;
+	margin: 1em 0;
+	padding: 0;
+	border-top: 1px solid $baseColor;
+}
+
+// Descriptions
+// -------------------
+
+dl {
+	margin: 1em 0;
+
+	dt {
+		font-weight: bold;
+	}
+	dd {
+		margin: 0 0 0.5em;
+	}
+}

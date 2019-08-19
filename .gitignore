@@ -62,3 +62,7 @@ typings/
 
 # eclipse settings
 .project
+
+package-lock.json
+
+.settings/

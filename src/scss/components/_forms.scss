@@ -1,0 +1,191 @@
+//
+// Forms
+// --------------------------------------------------
+$inputBorderSize: 3px;
+
+// Basic Styles
+// -------------------
+
+form {
+	display: block;
+	margin: 1em 0;
+}
+
+fieldset {
+	display: block;
+	margin: 1.25em 0;
+	padding: 0;
+}
+
+legend {
+	display: block;
+	width: 100%;
+	margin: 0 0 1em 0;
+	font-weight: bold;
+	border-bottom: 1px solid $baseColor;
+}
+
+label {
+	display: block;
+	margin: 0 0 0.25em;
+	font-weight: bold;
+}
+
+// Form Elements
+// -------------------
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="email"] {
+	width: inherit;
+}
+
+input[type="checkbox"],
+input[type="color"],
+input[type="image"]{
+	
+}
+input[type="color"] {
+	
+}
+input[type="radio"],input[type="checkbox"] {
+	display: none;
+	&:checked + label:before {
+		display: none;
+	}
+	&:checked + label {
+		padding: 5px 15px 5px 51px;
+		
+		border-radius: 2px;
+		color: $textColor;
+		&:before {	
+			display: inline-block;
+			width: 17px;
+			height: 17px;
+			position: absolute;
+			left: 15px;
+			border: 3px inset rgba(0,0,0,0.1);
+		}
+	}
+}
+input[type="radio"] + label, input[type="checkbox"] + label {
+	display: inline-block;
+	cursor: pointer;
+	color: $textColor;
+	position: relative;
+	padding: 5px 15px 5px 51px;
+	font-size: 1em;
+	&:before {	
+		content: "";
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		left: 15px;
+		background: $baseColor;
+		border: 3px inset rgba(0,0,0,0.1);
+	}
+}
+
+input[type="radio"] + label:before {
+	border-radius: 50%;	
+}
+input[type="checkbox"] + label:before {
+	border-radius: 3px;	
+}
+
+input[type="radio"]:checked + label {
+	color: $primaryColor;
+	&:before {
+		background: $primaryColor;
+	}
+}
+input[type="checkbox"]:checked + label {
+	color: $secondaryColor;
+	&:before {
+		background: $secondaryColor;
+	}
+}
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"] {
+	display: block;
+	padding: 0.5em;
+	margin: 0 0 0.625em;
+	vertical-align: middle;
+	border-style: solid;
+	border-color: $baseColor;
+	border-width: 0 0 3px 0;
+	outline: none;
+	font-family: inherit;
+	font-size: 1rem;
+	border-radius: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+
+	&:hover, &:focus {
+		background: rgba(0,0,0,0.01);
+		border-color: $primaryColor;
+	}
+	&::placeholder {
+		color: $textColor;
+	}
+	&:hover::placeholder {
+		color: $primaryColor;
+        transform: translateY(-26px) scale(.75);
+		opacity: 1;
+	}
+	
+	&:focus::placeholder {
+		color: $primaryColor;
+		opacity: 1;
+        transform: translateY(-26px) scale(.75);
+	}
+}
+
+// Form Buttons
+
+input[type="submit"],
+input[type="button"] {
+	display: block;
+}
+input[type="file"] {
+	padding: 0.125em;
+	margin: 0 0 0.625em;
+	font-family: inherit;
+	font-size: 1rem;
+	-webkit-appearance: none;
+	border-radius: 0;
+	line-height: 100%;
+}
+
+// Misc Additions
+
+textarea {
+	padding: 0.25em; // to make the textarea more writeable
+}
+
+// Bonus HTML5 Elements
+
+progress,
+meter {
+	padding: 0.125em;
+	margin: 0 0 0.625em;
+	font-family: inherit;
+	font-size: 1rem;
+}

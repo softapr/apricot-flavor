@@ -1,0 +1,57 @@
+//
+// Navigation
+// --------------------------------------------------
+
+
+// Primary (Horiztonal) Navigation
+// -------------------
+
+ul[class*="menu-"] {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	li {
+		list-style: none;
+		display: block;
+		
+		&>a {
+			color: $textColor;
+			text-decoration: none;
+			padding: 0.5em;
+			
+			&:hover {
+				color: $primaryColor;
+				background: rgba(0,0,0,0.02);
+				cursor: pointer;
+			}
+		}
+		&.horizontal {
+			display: block;
+			border-top: 3px solid $baseColor;
+			margin: 5px 0;
+			
+			&>a {
+				display: inline-block;
+				border-bottom: 3px solid rgba(0,0,0,0);
+				
+				&:hover {
+					border-bottom: 3px solid $primaryColor;
+				}
+			}			
+		}
+		&.vertical {
+			display: inline-block;
+			border-left: 3px solid $baseColor;
+			margin: 0 5px;
+			
+			&>a {
+				display: block;
+				border-right: 3px solid rgba(0,0,0,0);
+				
+				&:hover {
+					border-right: 3px solid $primaryColor;
+				}
+			}			
+		}
+	}
+}
