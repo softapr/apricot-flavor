@@ -18,21 +18,214 @@
 	<body>
 		<header>
 			<div class="container">
-				<img src="dist/img/logo-white.png" alt="Logo"/>
-				
-				
-			</div>
-		</header>
-		<div class="container">
-			<section class="main">
 				<h1>Getting Started</h1>
 				<p>This is a basic HTML template to help you get started with <a href="https://github.com/softapr/apricot-flavor"><strong>Apricot Flavor</strong></a>.</p>
-			</section>
+			</div>
+		</header>
+		<div class="main container">
+			<div>
+				<h2>Quick Reference</h2>
+			</div>
+			<article class="full">
+				<section>
+					<p>These quick guides will help you get started. For more detailed instructions check out the documentation.</p>
+				</section>
+			</article>
+			<article class="full">
+				<head>
+					<hr class="primary"/>
+					<h2>Components <a href="" class="icon-lifebuoy"></a></h2>
+				</head>
+				<section>
+					<p>These quick guides will help you get started. For more detailed instructions check out the documentation.</p>
+				</section>
+			</article>
+			<article>
+				<header>
+					<h3 class="icon-dot-2">Buttons <em>(_buttons.scss)</em></h3>
+				</header>
+				<section>
+					<p>Social icons are achived by prefixing icon text with:<br><code>&lt;span class=&quot;icon-[socialNework]&quot;&gt;</code></p>
+				</section>
+				<aside>
+					<button>enabled</button>
+					<button class="disabled">.disabled</button><br>
+					<button class="primary">primary</button>
+					<button class="primary disabled">primary.disabled</button><br>
+					<button class="secondary">secondary</button>
+					<button class="secondary disabled">secondary.disabled</button><br>
+					<button class="facebook"><span class="icon-facebook"></span>facebook</button>
+					<button class="facebook disabled">facebook.disabled</button><br>
+					<button class="twitter"><span class="icon-twitter">twitter</button>
+					<button class="twitter disabled">twitter.disabled</button><br>
+					<button class="huge">.huge</button><br />
+				</aside>
+			</article>
+			<article>
+				<header>
+					<hr />
+					<h3 class="icon-dot-2">Menus <em>(_menus.scss)</em></h3>
+				</header>
+				<section>
+					---
+				</section>
+				<aside>
+							
+					<ul class="menu-demo">
+						<li class="horizontal">
+							<a>Item 1</a>
+							<a>Item 2</a>
+							<a>Item 3</a>
+						</li>
+						<li class="horizontal secondary">
+							<a>Item 1</a>
+							<a>Item 2</a>
+							<a>Item 3</a>
+						</li>
+					</ul>
+					<ul class="menu-demo">
+						<li class="vertical">
+							<a>Item 1</a>
+							<a>Item 2</a>
+							<a>Item 3</a>
+						</li>
+						<li class="vertical secondary">
+							<a>Item 1</a>
+							<a>Item 2</a>
+							<a>Item 3</a>
+						</li>
+					</ul>
+				</aside>
+			</article>
+			<article>
+				<header>
+					<hr />	
+					<h3 class="icon-dot-2">Forms <em>(_forms.scss)</em></h3>
+				</header>
+				<section>
+					<p>All HTML5 form elements are normalized to a set of core styles.</p>	
+				</section>
+				<aside>
+					<form>
+						    <input type="date">
+						    <input type="datetime-local" placeholder="datetime-local">
+						    
+						    <input type="image">
+						    <input type="month" placeholder="month">
+						    <input type="number" placeholder="number">
+						    <div>
+								<p>Pickers:</p>
+						    	<input type="color"><br />
+								<input type="file">
+						    </div>
+						    <div>
+								<p>Text Boxes:</p>
+								<input type="text" placeholder="Name">
+								<input type="email" placeholder="Email">
+						    	<input type="password" placeholder="password">
+							</div>
+							<div>
+								<p>Checkboxes:</p>
+							    <input type="checkbox" name="checkbox" value="1" id="checkbox1">
+								<label for="checkbox1">Checkbox1</label>
+							    <input type="checkbox" name="checkbox" value="2" id="checkbox2">
+								<label for="checkbox2">Checkbox2</label>
+							</div>
+							<div>
+								<p>Radio buttons:</p>
+								<input type="radio" name="radio" value="1" id="radio1">
+								<label for="radio1">Radio1</label><br />
+							    <input type="radio" name="radio" value="2" id="radio2">
+								<label for="radio2">Radio2</label><br />
+							    <input type="radio" name="radio" value="3" id="radio3">
+								<label for="radio3">Radio3</label>
+							</div>
+						    <input type="range">
+						    <input type="search" placeholder="search">
+						    <input type="tel" placeholder="tel">
+						    <input type="time">
+						    <input type="url" placeholder="url">
+						    <input type="week" placeholder="Week">
+							<textarea></textarea>
+							<input type="button" value="Button">
+							<button type="reset"/><span class="icon-cancel">Reset</span></button>
+							<button type="submit"/>Submit<span class="icon-right-open"></span></button>
+					</form>		
+				</aside>
+			</article>
+			<article>
+				<header>	
+					<hr />
+					<h3 class="icon-dot-2">Lists <em>(_lists.scss)</em></h3>
+				</header>
+				<section>
+					---
+				</section>
+				<aside>
+					<ul>
+						<li class="icon-bookmark">Item 1</li>
+						<li class="icon-folder">Item 2</li>
+						<li class="icon-location">Item 3</li>
+					</ul>
+					<ul>
+						<li>Item 1</li>
+						<li>Item 2</li>
+						<li>Item 3</li>
+					</ul>
+					<ol>
+						<li>Item 1</li>
+						<li>Item 2</li>
+						<li>Item 3</li>
+					</ol>		
+				</aside>
+			</article>
+			<article>
+				<header>	
+					<hr />
+					<h3 class="icon-dot-2">Tooltips <em>(_tooltips.scss)</em></h3>
+				</header>
+				<section>
+					---
+				</section>
+				<aside>
+					<p><code data-tooltip="Left tooltip" data-tooltip-position="left">data-tooltip-position="left"</code></p>
+					<p><code data-tooltip="Right tooltip" data-tooltip-position="right">data-tooltip-position="right"</code></p>
+					<p><code data-tooltip="Top tooltip" data-tooltip-position="top">data-tooltip-position="top"</code></p>
+					<p><code data-tooltip="Bottom tooltip" data-tooltip-position="bottom">data-tooltip-position="bottom"</code></p>		
+				</aside>
+			</article>
+
+			<article class="full">
+				<head>
+					<hr class="primary"/>
+					<h2>Mixins <a href="" class="icon-lifebuoy"></a></h2>
+				</head>
+				<section>
+					<p></p>
+				</section>
+			</article>
+			<article>
+				<header>	
+					<h3 class="icon-dot-2">Helpers <em>(_helpers.scss)</em></h3>
+				</header>
+				<section>
+					---
+				</section>
+				<aside>		
+				</aside>
+			</article>
 		</div>
 		<footer>
 			<div class="container">
-				<hr>
-				<p>Apricot Flavor is distributed under the <a href="https://github.com/softapr/apricot-flavor/blob/master/LICENSE">Apache 2.0 license</a>.</p>
+				<div>					
+					<img src="dist/img/logo-white.png" alt="Logo"/>
+				</div>
+				<div>
+					<p>Distributed under the <a href="https://github.com/softapr/apricot-flavor/blob/master/LICENSE">Apache 2.0 license</a>.</p>
+				</div>
+				<div class="right">
+					<a href="https://github.com/softapr" class="button-style"><span class="icon-github"></span></a>
+				</div>
 			</div>
 		</footer>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

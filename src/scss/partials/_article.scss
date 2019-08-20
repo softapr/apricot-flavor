@@ -1,0 +1,19 @@
+article {
+	@include columns(12);
+	text-align: justify;
+	height: auto;
+	
+	header {
+		@include columns(12, 0, 0);
+	}
+	section {
+		@include columns(8);
+	}
+	aside {
+		@include columns(4);	
+		padding: 1em 0;	
+	}
+	&.full section{
+		@include columns(12);
+	}
+}

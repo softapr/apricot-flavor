@@ -8,13 +8,14 @@ table {
 
 	th {
 		padding: 0.5em;
-		border: 1px solid $baseColor;
-		background: lighten($baseColor, 3.5%);
+		border: 1px solid darken($baseColor, 15%);
+		background: darken($baseColor, 5%);
 		text-align: left;
 		font-weight: bold;
 	}
 	td {
 		padding: 0.5em;
-		border: 1px solid $baseColor;
+		background: lighten($baseColor, 3.5%);
+		border: 1px solid darken($baseColor, 15%);
 	}
 }

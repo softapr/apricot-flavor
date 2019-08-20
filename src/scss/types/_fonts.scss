@@ -18,7 +18,11 @@
   }
 }
 */
-
+ li[class^="icon-"],
+ li[class*=" icon-"] {
+	margin-left: -22px;
+	list-style: none;
+}
  [class^="icon-"]:before,
  [class*=" icon-"]:before,
  .tweet:before,

@@ -1,4 +1,4 @@
-//
+	//
 // Forms
 // --------------------------------------------------
 $inputBorderSize: 3px;
@@ -52,7 +52,8 @@ input[type="image"]{
 input[type="color"] {
 	
 }
-input[type="radio"],input[type="checkbox"] {
+input[type="radio"],
+input[type="checkbox"] {
 	display: none;
 	&:checked + label:before {
 		display: none;
@@ -90,7 +91,11 @@ input[type="radio"] + label, input[type="checkbox"] + label {
 		border: 3px inset rgba(0,0,0,0.1);
 	}
 }
-
+input[type="submit"] {
+	display: none;
+}
+input[type="submit"] + label{
+}
 input[type="radio"] + label:before {
 	border-radius: 50%;	
 }
@@ -124,6 +129,7 @@ input[type="email"],
 input[type="url"],
 input[type="search"],
 input[type="tel"] {
+	background: white;
 	display: block;
 	padding: 0.5em;
 	margin: 0 0 0.625em;

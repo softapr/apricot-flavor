@@ -42,8 +42,8 @@ cite {
 code {
 	font-size: 0.96rem;
 	font-family: monospace;
-	background: $baseColor;
-	border: 1px solid darken($baseColor, 5%);
+	background: darken($baseColor, 5%);
+	border: 1px solid darken($baseColor, 15%);
 	padding: 0.125em 0.25em;
 	line-height: 150%;
 }
@@ -63,7 +63,11 @@ hr {
 	border: none;
 	margin: 1em 0;
 	padding: 0;
-	border-top: 1px solid $baseColor;
+	border-top: 2px solid darken($baseColor, 15%);
+	
+	&.primary {
+		border-top: 3px solid $primaryColor;
+	}
 }
 
 // Descriptions

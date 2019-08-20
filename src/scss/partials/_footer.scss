@@ -1,4 +1,17 @@
 footer {
+	@include columns(12, 0, 0);
+	padding: 1em 0;
 	color: white;
 	background: $secondaryColor;
+	
+	.container>div {
+		@include columns(4);
+		&.right {
+			text-align: right;
+		}
+	}
+	a {
+		color: white;
+		font-weight: bold;
+	}
 }
