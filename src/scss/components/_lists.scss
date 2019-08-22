@@ -2,6 +2,12 @@
 // Tables
 // -------------------
 
+li[class^="icon-"],
+li[class*=" icon-"] {
+	margin-left: -22px;
+	list-style: none;
+}
+
 ol,
 ul {
 	margin: 1em 0;
