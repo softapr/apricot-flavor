@@ -6,13 +6,13 @@ const del = require('del');
 const browserSync = require('browser-sync').create();
 const transform = require('vinyl-transform');
 
-const site_name = param('site','flavor');
+const site_name = param('site','main');
 const src_path  = 'src';
 const dist_path = 'dist';
 
 let debug = true;
-let proxy = 'localhost';
-let staticSrc = src_path+'/**/*.{webm,svg,eot,ttf,woff,woff2,otf,mp4,json,pdf,ico}';
+let proxy = param('proxy','localhost');
+let staticSrc = src_path+'/**/*.{webm,svg,eot,ttf,woff,woff2,otf,mp4,json,pdf,ico,css,min.js}';
 
 function param(param_name, default_result){
 	const args = process.argv.slice(2)
