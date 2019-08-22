@@ -6,4 +6,4 @@ For a consistent, cross-browser experience we use [sanitize.css](https://csstool
 
 ***
 
-This framework is inspired by the work of [Agensy](https://github.com/agency) with [Base](https://github.com/agency/base) and started as a fork.
+This framework is inspired by the work of [Agency](https://github.com/agency) with [Base](https://github.com/agency/base) and started as a fork.

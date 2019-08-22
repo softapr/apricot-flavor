@@ -136,7 +136,7 @@ function production(done) {
 }
 
 exports.build = series(production, clean, images, copy, styles, scripts	);
-exports.dev = function() {
+exports.dev = series(images, styles, scripts, copy, function(done){
 	// Serve
 	browserSync.init({
 		proxy: proxy,
@@ -157,5 +157,4 @@ exports.dev = function() {
 		dist_path+'/**/*.js',
 		dist_path+'/**/*.css'
 	]);
-	
-}
+});
